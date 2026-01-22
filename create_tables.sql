@@ -1,0 +1,23 @@
+CREATE DATABASE production_db;
+
+USE production_db;
+
+CREATE TABLE User (
+id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Network_Account (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    unique_id VARCHAR(36) NOT NULL,
+    ip_range VARCHAR(50) NOT NULL,
+    community VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Router",
+        "ip": "192.168.0.1",
+        "connections": ["2","3"]
+    },
+    {
+        "id": "2",
+        "name": "Laptop",
+        "ip": "192.168.0.101",
+        "connections": []
+    },
+    {
+        "id": "3",
+        "name": "printer",
+        "ip": "192.168.0.102",
+        "connections": []
+    }
+]
